@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.PayrollController">
+   <bottom>
+      <BorderPane prefHeight="243.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <top>
+            <SplitPane dividerPositions="0.4882943143812709" prefHeight="63.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+              <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="34.0" prefWidth="288.0">
+                     <children>
+                        <Button layoutX="14.0" layoutY="17.0" mnemonicParsing="false" onAction="#HandleUploadWhenIWork" text="Upload WhenIWork Timesheet" />
+                     </children>
+                  </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                     <children>
+                        <Button fx:id="UploadAloha" layoutX="83.0" layoutY="18.0" mnemonicParsing="false" onAction="#HandleUploadAloha" text="Upload Aloha Credit Card CSV" />
+                     </children>
+                  </AnchorPane>
+              </items>
+            </SplitPane>
+         </top>
+         <bottom>
+            <SplitPane dividerPositions="0.5" prefHeight="79.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+              <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                     <children>
+                        <Button fx:id="AddEditEmployees" layoutX="77.0" layoutY="14.0" mnemonicParsing="false" onAction="#HandleAddEditEmployees" text="Add/Edit Employees" />
+                     </children>
+                  </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                     <children>
+                        <Button fx:id="AddEditPositions" layoutX="82.0" layoutY="14.0" mnemonicParsing="false" onAction="#HandleAddEditPositions" text="Add/Edit Positions" />
+                     </children>
+                  </AnchorPane>
+              </items>
+            </SplitPane>
+         </bottom>
+         <center>
+            <Button fx:id="MakePayroll" mnemonicParsing="false" onAction="#HandleMakePayroll" text="MAKE PAYROLL" BorderPane.alignment="CENTER" />
+         </center>
+         <left>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <TextField fx:id="WhenIWorkText" layoutX="17.0" layoutY="16.0" />
+               </children>
+            </AnchorPane>
+         </left>
+         <right>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <TextField fx:id="AlohaText" layoutX="-14.0" layoutY="16.0" prefHeight="27.0" prefWidth="175.0" />
+               </children>
+            </AnchorPane>
+         </right>
+      </BorderPane>
+   </bottom>
+   <top>
+      <BorderPane prefHeight="200.0" prefWidth="700.0" BorderPane.alignment="CENTER">
+         <center>
+            <ImageView fitHeight="310.0" fitWidth="310.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+               <image>
+                  <Image url="parktavernlogo.png" />
+               </image>
+            </ImageView>
+         </center>
+         <top>
+            <ToolBar prefHeight="18.0" prefWidth="600.0" BorderPane.alignment="CENTER" />
+         </top>
+      </BorderPane>
+   </top>
+</BorderPane>

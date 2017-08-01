@@ -1,0 +1,25 @@
+Manager,02
+MOD,02
+Event Sales,03
+Kitchen,06
+Host,07
+Server,08
+Training Server,08
+Food Runner,09
+Busser,09
+Barback,09
+Inventory,09
+Dishwasher,10
+Manager Salary,11
+Bartender,12
+Service,12
+Maintenance,13
+Banquet Server,18
+Event Server,18
+Banquet Bartender,20
+Banquet Dishwasher,21
+Sushi,24
+Banquet Cook,25
+Ice Rink,26
+Basecamp,27
+Parking,28
